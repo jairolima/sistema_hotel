@@ -18,7 +18,7 @@
     </div>
     <?php
 
-        $conexao = mysqli_connect("localhost", "root", "", "bd_hotelmv");
+        $conexao = mysqli_connect("localhost", "root", "", "hotel_mv");
 
         $cpf_usuario = $_POST['cpf'];  
 
