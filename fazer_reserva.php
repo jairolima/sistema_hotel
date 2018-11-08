@@ -6,14 +6,9 @@
         <h5 class="text-primary" >Preencha os campos para fazer uma reserva!</h5><br>
         <form method="post" action="reservar.php" >
 
-            <?php $conexao = mysqli_connect("localhost", "root", "", "hotel_mv"); ?>
-            <?php $query = $conexao->query("SELECT DISTINCT tipo FROM suite where ocupado = 'N';"); ?>
-            Suíte :<select name="tipo">
-                <?php while($reg = $query->fetch_array()) { ?>
-                    <option value="<?php echo $reg['tipo'];?>"><?php echo $reg['tipo']; ?>
-                    </option>
-                <?php } ?>
-            </select><br>
+            <input type="radio" name="tipo" value="Idividual" checked> Idividual <br>
+            <input type="radio" name="tipo" value="Casal Simples"> Casal Simples <br>
+            <input type="radio" name="tipo" value="Casal Deluxe"> Casal Deluxe <br>
 
             <br>Nome :<input type="text" name="nome" placeholder="Nome" />
             CPF :<input type="text" name="cpf" placeholder="Cpf" />

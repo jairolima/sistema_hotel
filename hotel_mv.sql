@@ -1,3 +1,4 @@
+
 -- NOME DO BANCO DE DADOS: hotel_mv
 
 create table estadia(
@@ -8,7 +9,8 @@ create table estadia(
     crianca varchar(2),
     idadeCC varchar(2),
 	CPF_H varchar(11),
-    nome_H varchar(45)
+    nome_H varchar(45),
+    suite_H varchar(45)
     
 )engine=InnoDB default charset=utf8;
 
@@ -27,16 +29,19 @@ create table suite(
     
 )engine=InnoDB default charset=utf8;
 
-insert into suite(numero, tipo, ocupado) 
-values
-	('001', 'individual-simples', 'N'),
-    ('002', 'individual_simples', 'N'),
-    ('003', 'casal-simples', 'N'),
-    ('004', 'casal_simples', 'N'),
-    ('005', 'individual-deluxe', 'N'),
-    ('006', 'individual_deluxe', 'N'),
-    ('007', 'casal-deluxe', 'N'),
-    ('008', 'casal_deluxe', 'N');
+insert into suite(numero, tipo, ocupado) values
+	('001', 'Individual', 'N'),
+    ('002', 'Individual', 'N'),
+    ('003', 'Individual', 'N'),
+    ('004', 'Individual', 'N'),
+    ('005', 'Casal Simples', 'N'),
+    ('006', 'Casal Simples', 'N'),
+    ('007', 'Casal Simples', 'N'),
+    ('008', 'Casal Simples', 'N'),
+    ('009', 'Casal Deluxe', 'N'),
+    ('010', 'Casal Deluxe', 'N'),
+    ('011', 'Casal Deluxe', 'N'),
+    ('012', 'Casal Deluxe', 'N');
 
 
 

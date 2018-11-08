@@ -32,7 +32,7 @@
                 <div class='container'>
                 <h5>------------------------------------<br>Data de Chegada: " . $row["dataC"]. " <br>Data de Saída: " . $row["dataS"]
                 . " <br>Quantidade de Pessoas: " . $row["adulto"]. " <br>Crianças: " . $row["crianca"]. 
-                " <br>CPF: " . $row["CPF_H"]. " <br>Nome : " . $row["nome_H"]. "</h5><br>
+                " <br>CPF: " . $row["CPF_H"]. " <br>Nome : " . $row["nome_H"]. " <br>Suíte: " . $row["suite_H"]. "</h5><br>
                 </div>
                 ";
             }

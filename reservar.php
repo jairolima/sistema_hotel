@@ -39,12 +39,12 @@
         
         $sqlS = "update suite
         set ocupado = 'S'  
-        where tipo = '$tipo';";
+        where tipo = '$tipo' and ocupado <> 'S' limit 1;";
 
         mysqli_query($conexao, $sqlS);
 
-        $sql = "insert into estadia(dataC, dataS, adulto, crianca, idadeCC, CPF_H, nome_H)
-        values('$chegada', '$saida', '$adulto', '$crianca', '$idade', '$cpf', '$nome');";
+        $sql = "insert into estadia(dataC, dataS, adulto, crianca, idadeCC, CPF_H, nome_H, suite_H)
+        values('$chegada', '$saida', '$adulto', '$crianca', '$idade', '$cpf', '$nome', '$tipo');";
         
         mysqli_query($conexao, $sql);
 
