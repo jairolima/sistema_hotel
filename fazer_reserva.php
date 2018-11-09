@@ -6,7 +6,7 @@
         <h5 class="text-primary" >Preencha os campos para fazer uma reserva!</h5><br>
         <form method="post" action="reservar.php" >
 
-            <input type="radio" name="tipo" value="Idividual" checked> Idividual <br>
+            <input type="radio" name="tipo" value="Individual" checked> Individual <br>
             <input type="radio" name="tipo" value="Casal Simples"> Casal Simples <br>
             <input type="radio" name="tipo" value="Casal Deluxe"> Casal Deluxe <br>
 
