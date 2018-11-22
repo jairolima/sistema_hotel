@@ -1,24 +1,50 @@
-<!doctype html>
-<html lang="pt-br">
-
-    <head>
-        <!-- Required meta tags -->
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-        <!-- Bootstrap CSS -->
-        <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-        <title>Hotel Mar Vermelho</title>
-    </head>
-    <body>
             
-            <br>
-            
-            <div class="container">
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <!--<li data-target="#carouselExampleIndicators" data-slide-to="2"></li>-->
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img style="width: 100%; height: 600px" class="d-block" src="img/quarto-i.jpg" alt="First slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Nós sabemos o que você ama!</h2>
+                    <h3>Bem-vindo aos nossos hoteis</h3>
+                    <a class="btn btn-outline-light btn-lg" href="#" role="button">Reservar</a>
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img style="width: 100%; height: 600px" class="d-block" src="img/pool.jpg" alt="Second slide">
+                <div class="carousel-caption d-none d-md-block">
+                    <h2>Traga sua família e amigos!</h2>
+                    <h3>Desfrute de momentos preciosos</h3>
+                    <a class="btn btn-outline-light btn-lg" href="#" role="button">Reservar</a>
+                    <i class="fas fa-angle-double-down"></i>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+    
+        <h3 class="s">NOSSOS SERVIÇOS</h3>
+
+        
+    
+    
+        <div class="container">
             <div class="card-deck">
                 <div class="card">
-                    <img class="card-img-top" src="https://instagram.fjpa1-1.fna.fbcdn.net/vp/ebcc646b3cea594bdd6e7a93becc9a31/5C4535B8/t51.2885-15/e35/44637174_606695509766736_7387455782146564920_n.jpg" alt="Card image cap">
+                    <img class="card-img-top" 
+                    src="img/suite.jpg" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title">Suíte Individual Simples</h5>
                     <p class="card-text">Duas camas de solteiro + vista para a avenida.</p>
@@ -26,7 +52,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="https://instagram.fjpa1-1.fna.fbcdn.net/vp/99fa236521e9b1bf5514ab81a84c9d7d/5C4988B2/t51.2885-15/e35/41724479_1019817114857595_3193596471370842112_n.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="img/suite.jpg" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title">Suíte Casal Simples</h5>
                     <p class="card-text">Uma cama casal + vista para a avenida.</p>
@@ -34,7 +60,7 @@
                     </div>
                 </div>
                 <div class="card">
-                    <img class="card-img-top" src="https://instagram.fjpa1-1.fna.fbcdn.net/vp/a148947a37d3434fb217b26e4708d802/5C467787/t51.2885-15/e35/42758189_331796494237653_3398417712018964412_n.jpg" alt="Card image cap">
+                    <img class="card-img-top" src="img/suite.jpg" alt="Card image cap">
                     <div class="card-body">
                     <h5 class="card-title">Suítes Deluxe</h5>
                     <p class="card-text">Uma cama casal + uma cama solteiro + vista para o mar.</p>
@@ -43,5 +69,3 @@
                 </div>
             </div>
             </div>
-        </body>
-    </html>

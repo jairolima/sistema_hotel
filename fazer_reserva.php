@@ -1,4 +1,7 @@
-
+<?php
+    include("style.php");
+    include("menu.php");
+?>
 <br>
 <div class="container">
     <div class="jumbotron">
