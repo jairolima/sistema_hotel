@@ -31,7 +31,7 @@
                 <input class="form-control mr-sm-2" type="text" placeholder="Usuário" aria-label="Search">
                 <input class="form-control mr-sm-2" type="text" placeholder="Senha" aria-label="Search">
                 <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Entrar</button>
-                <a class="btn btn-outline-secondary" href="#" role="button">Cadastrar</a>
+                <a class="btn btn-outline-secondary" href="cadastro.php" role="button">Cadastrar</a>
             </form>
         </div>
     </div>

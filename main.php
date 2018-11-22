@@ -12,7 +12,7 @@
                     <h2>Nós sabemos o que você ama!</h2>
                     <h3>Bem-vindo aos nossos hoteis</h3>
                     <a class="btn btn-outline-light btn-lg" href="#" role="button">Reservar</a>
-                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-down" id="seta"></i>
                 </div>
             </div>
             <div class="carousel-item">
@@ -21,7 +21,7 @@
                     <h2>Traga sua família e amigos!</h2>
                     <h3>Desfrute de momentos preciosos</h3>
                     <a class="btn btn-outline-light btn-lg" href="#" role="button">Reservar</a>
-                    <i class="fas fa-angle-double-down"></i>
+                    <i class="fas fa-angle-double-down" id="seta"></i>
                 </div>
             </div>
         </div>
@@ -35,12 +35,19 @@
         </a>
     </div>
     
-        <h3 class="s">NOSSOS SERVIÇOS</h3>
+        <div class="s">
+        <h3>NOSSOS SERVIÇOS</h3>
+        <br>
+        <i class="fas fa-wifi" id="f"></i>
+        <i class="fas fa-utensils" id="r"></i>
+        <i class="fas fa-concierge-bell" id="b"></i>
+        <i class="fas fa-hotel" id="v"></i>
 
+        </div>
+
+        <h3 class="ss">EXPERIMENTE UMA BOA ESTADIA, DESFRUTE DE OFERTAS FANTÁSTICAS</h3>
         
-    
-    
-        <div class="container">
+        <div class="container" id="card-suites">
             <div class="card-deck">
                 <div class="card">
                     <img class="card-img-top" 

@@ -1,3 +1,66 @@
+
+/* CSS DO FORMULARIO DE CADASTRO E LOGIN*/
+
+@import url("https://fonts.googleapis.com/css?family=Lato");
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+.conta {
+    width: 100vw;
+    height: 100vh;
+    background: #6C7A89;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center
+}
+
+.form-box {
+    width: 300px;
+    background: #fff;
+    font-family: Lato;
+    text-align: center;
+    padding: 20px;
+    box-sizing: border-box;
+    border-top: 10px solid #2eb2ff 
+}
+
+.form-box .form-input {
+    border: none;
+    background: #eee;
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    font-size: large;
+    margin-bottom: 10px
+}
+
+.form-box .form-btn {
+    border: none;
+    background: #2eb2ff;
+    width: 100%;
+    height: 50px;
+    font-size: large;
+    color: #fff;
+    margin-bottom: 10px
+}
+
+@media screen and (max-width:340px){
+    .form-box {
+        width: 100vw;
+        height: 100vh
+    }
+}
+
+/* ------- FIM --------*/
+
+#card-suites {
+    margin-top: 5%;
+    margin-bottom: 0%
+}
 .carousel-caption {
     position: absolute;
     right: 15%;
@@ -38,13 +101,33 @@
     font-weight: 400
 }
 
-.fas {
+#seta {
     font-size: -webkit-xxx-large;
     position: absolute;
     right: 15%;
     padding-top: 260px;
     left: 15%;
 
+}
+
+#f {
+    font-size: -webkit-xxx-large;
+    margin-right: 5%
+}
+
+#r {
+    font-size: -webkit-xxx-large;
+    margin-right: 5%
+}
+
+#b {
+    font-size: -webkit-xxx-large;
+    margin-right: 5%
+}
+
+#v {
+    font-size: -webkit-xxx-large;
+    
 }
 
 .s {
@@ -56,4 +139,14 @@
     padding-top: 5%;
     padding-bottom: 5%;
     background-color: #ffcc00;
+}
+
+.ss {
+    font-family: 'Poppins', sans-serif;
+    text-shadow: 2px 2px 5px #0000;
+    font-size: 3ch;
+    color: #a8a8a8;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 2%;
 }
