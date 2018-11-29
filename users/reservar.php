@@ -1,9 +1,9 @@
-
+    
     <?php 
 
-    include("url_site.php");
-    include("db/dbconnect.php");
-
+    include("url_users.php");
+    include("../db/dbconnect.php");
+    
     $chegada = $_REQUEST["chegada"];
     $saida = $_REQUEST["saida"];
     $adulto = $_REQUEST["adulto"];
@@ -14,11 +14,6 @@
     $cpf = $_REQUEST["cpf"];
     $email = $_REQUEST["email"];
     $senha = $_REQUEST["senha"];
-
-    $sqlH = "insert into hospede(CPF, nome, senha, email) 
-    values('$cpf', '$nome', '$senha', '$email');";
-    
-    mysqli_query($conexao, $sqlH);
         
     $sqlS = "update suite
     set ocupado = 'S'  

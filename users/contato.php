@@ -1,6 +1,5 @@
 <?php
-    include("style.php");
-    include("menu.php");
+    include("url_users.php");
 ?>
 <br>
 <div class="container">

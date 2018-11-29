@@ -1,18 +1,8 @@
 
-    
     <?php 
 
-        
-
-        session_start();
-
-        include("style.php");
-        include("menu.php");
-        include("main.php");
-        include("rodape.php");
-
-        if(isset($_SESSION['CPF'])) {
-            header("location:main.php");
-        }
+    include("url_site.php");
+    include("main.php");
+    include("footer.php");
 
     ?>

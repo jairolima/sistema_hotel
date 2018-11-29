@@ -1,13 +1,40 @@
-
+<?php
+    include("url_users.php");
+    include("../db/dbconnect.php");
+    if(!isset($_SESSION['usuario'])) {
+        header("location:login_pg.php");
+    }
+    
+?>
 <br>
 <div class="container">
     <div class="jumbotron">
-        <h2>Ver meu histórico</h2> 
-        <h5 class="text-primary" >Informe seu CPF para ver histórico de hospedagens!</h5><br>
-        <form method="post" action="ver_historico.php">
-            CPF : <input type="text" name="cpf"/> <br>
-            <br><input class="btn btn-primary" type="reset" name="botao_limpar" value="Limpar"/>
-            <input class="btn btn-primary" type="submit" name="enviar" value="OK">  
-        </form>
+        <h2>Suas estadias</h2> 
+        <h5 class="text-primary" >Aqui está seu histórico de hospedagens!</h5><br>
+        <?php
+            $nome = $_SESSION['usuario'];
+
+            $query = "select * from estadia where nome_H='$nome' order by idE desc;";
+
+            $result = mysqli_query($conexao, $query);
+
+            if(mysqli_num_rows($result) > 0) {
+                while($row = mysqli_fetch_assoc($result)) {
+                    echo "
+                        <div class='container'>
+                        <h5>------------------------------------<br>Data de Chegada: " . $row["dataC"]. " <br>Data de Saída: " . $row["dataS"]
+                        . " <br>Quantidade de Pessoas: " . $row["adulto"]. " <br>Crianças: " . $row["crianca"]. 
+                        " <br>CPF: " . $row["CPF_H"]. " <br>Nome : " . $row["nome_H"]. " <br>Suíte: " . $row["suite_H"]. "</h5><br>
+                        </div>
+                    ";
+                }
+            } else {
+                echo "
+                    <div class='container'>
+                    <br><h5>Você ainda não se hospedou conosco!</h5>
+                    </div>
+                ";
+            }     
+        ?>
     </div> 
 </div>

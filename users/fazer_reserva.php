@@ -1,6 +1,24 @@
 <?php
-    include("url_site.php");
-    include("db/dbconnect.php");
+    include("url_users.php");
+    include("../db/dbconnect.php");
+    if(!isset($_SESSION['usuario'])) {
+       header("location:login_pg.php");
+    }
+    
+
+    $nome = $_SESSION['usuario'];
+
+    $query = "select * from hospede where nome='$nome';";
+
+    $result = mysqli_query($conexao, $query);
+
+    if(mysqli_num_rows($result) == 1) {
+        $row = mysqli_fetch_assoc($result);
+        //$nome = $row['nome'];
+        $cpf = $row['CPF'];
+        $email = $row['email'];
+        $senha = $row['senha'];
+    }
 ?>
 <br>
 <div class="container">
@@ -13,10 +31,10 @@
             <input type="radio" name="tipo" value="Casal Simples"> Casal Simples <br>
             <input type="radio" name="tipo" value="Casal Deluxe"> Casal Deluxe <br>
 
-            <br>Nome :<input type="text" name="nome" placeholder="Nome" />
-            CPF :<input type="text" name="cpf" placeholder="Cpf" />
-            E-mail :<input type="text" name="email" placeholder="E-mail" />
-            Senha :<input type="text" name="senha" placeholder="Senha" /><br>
+            <br>Nome :<input type="text" name="nome" placeholder="Nome" value="<?= $nome ?>" />
+            CPF :<input type="text" name="cpf" placeholder="Cpf" value="<?= $cpf ?>" />
+            E-mail :<input type="text" name="email" placeholder="E-mail" value="<?= $email ?>" />
+            Senha :<input type="password" name="senha" value="<?= $senha ?>" /><br>
            
             <br>Chegada:<input type="date" name="chegada"/>
             Saída:<input type="date" name="saida"/>
