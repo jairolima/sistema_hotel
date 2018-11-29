@@ -19,7 +19,7 @@ if(isset($_POST['nome']) && isset($_POST['senha'])) {
         $_SESSION['usuario'] = $nome;
 		//$_SESSION['senha']=$senha;
 
-        header("location:index.php");
+        header("location:disponiveis.php");
         
 	} else {
         echo "
@@ -41,7 +41,7 @@ if(isset($_POST['nome']) && isset($_POST['senha'])) {
         </div>
 			";
 	} else {
-		header("location:../index.php");
+		header("location:login_og.php");
 	}
 }
 ?>

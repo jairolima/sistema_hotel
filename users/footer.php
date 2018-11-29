@@ -81,10 +81,10 @@ i.glyphicon {
           <h6 class="text-uppercase font-weight-bold">Menu</h6>
           <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
           <p>
-            <a class="dark-grey-text" href="#!">Reservar</a>
+            <a class="dark-grey-text" href="fazer_reserva.php">Reservar</a>
           </p>
           <p>
-            <a class="dark-grey-text" href="#!">Contato</a>
+            <a class="dark-grey-text" href="contato.php">Contato</a>
           </p>
      
         </div>
