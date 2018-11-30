@@ -10,6 +10,8 @@ $email = $_REQUEST["email"];
 $senha = $_REQUEST["senha"];
 
 $_SESSION['usuario'] = $nome;
+$_SESSION['cpf'] = $cpf;
+$_SESSION['senha'] = $senha;
 
 $sql = "insert into hospede(CPF, nome, senha, email) 
 values('$cpf', '$nome', '$senha', '$email');";

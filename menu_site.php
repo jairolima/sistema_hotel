@@ -19,7 +19,7 @@
                 </li>
             </ul>
             <form class="form-inline my-2 my-lg-0" action="users/login.php" method="POST">
-                <input class="form-control mr-sm-2" type="text" placeholder="Usuário" aria-label="Search" name="nome" required>
+                <input class="form-control mr-sm-2" type="text" placeholder="CPF" aria-label="Search" name="cpf" required>
                 <input class="form-control mr-sm-2" type="password" placeholder="Senha" aria-label="Search" name="senha" required>
                 <button class="btn btn-outline-secondary my-2 my-sm-0" type="submit">Entrar</button><p>&nbsp;</p>
                 <a class="btn btn-outline-secondary" href=<?php echo "$cadastro" ?> role="button">Cadastrar</a>

@@ -9,7 +9,7 @@
                 </div>
 
                 <div>
-                    <input type="text" name="nome" placeholder="Informe seu nome" class=form-input required>
+                    <input type="text" name="nome" placeholder="Informe seu Nome" class=form-input required>
                 </div>
 
                 <div>
@@ -17,11 +17,11 @@
                 </div>
                 
                 <div>
-                    <input type="password" name="senha" placeholder="Informe sua senha" class=form-input required>
+                    <input type="password" name="senha" placeholder="Informe sua Senha" class=form-input required>
                 </div>
                 
                 <div>
-                    <input type="email" name="email" placeholder="Seu e-mail" class=form-input required>
+                    <input type="email" name="email" placeholder="Seu E-mail" class=form-input required>
                 </div>
 
                 <div>

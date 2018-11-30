@@ -1,4 +1,4 @@
-<?php session_start(); ?>
+
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
     <div class="container">
         <a class="navbar-brand" href=<?php echo "$index" ?>>HMV</a>

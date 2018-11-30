@@ -9,11 +9,11 @@
                 </div>
 
                 <div>
-                    <input type="text" name="nome" placeholder="Informe seu nome" class="form-input">
+                    <input type="text" name="cpf" placeholder="Informe seu CPF" class="form-input">
                 </div>
                 
                 <div>
-                    <input type="password" name="senha" placeholder="Informe sua senha" class="form-input">
+                    <input type="password" name="senha" placeholder="Informe sua Senha" class="form-input">
                 </div>
 
                 <div>

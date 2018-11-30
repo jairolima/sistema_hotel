@@ -5,15 +5,15 @@
         <div class="form-box">
             <form action="login.php" method="post">
                 <div>
-                    <h1>Login</h1>
+                    <h1>HMV</h1>
                 </div>
 
                 <div>
-                    <input type="text" name="nome" placeholder="Informe seu nome" class="form-input">
+                    <input type="text" name="login" placeholder="Informe seu Login" class="form-input">
                 </div>
                 
                 <div>
-                    <input type="password" name="senha" placeholder="Informe sua senha" class="form-input">
+                    <input type="password" name="senha" placeholder="Informe sua Senha" class="form-input">
                 </div>
 
                 <div>

@@ -3,21 +3,22 @@
 include("bootstrap_css.php");
 include("../db/dbconnect.php");
 
-if(isset($_POST['nome']) && isset($_POST['senha'])) {
+if(isset($_POST['cpf']) && isset($_POST['senha'])) {
 
-	$nome=$_POST['nome'];
+	$cpf=$_POST['cpf'];
 	$senha=$_POST['senha'];
 
-
-    $sql="SELECT * FROM hospede WHERE nome='$nome' AND senha='$senha' ";
+    $sql="SELECT * FROM hospede WHERE CPF='$cpf' AND senha='$senha' ";
     
 	$result=mysqli_query($conexao , $sql);
 
 	if(mysqli_num_rows($result) == 1) {
-        
+        $row = mysqli_fetch_assoc($result);
         session_start();
-        $_SESSION['usuario'] = $nome;
-		//$_SESSION['senha']=$senha;
+        $_SESSION['usuario'] = $row['nome'];
+        $_SESSION['cpf'] = $row['CPF'];
+        $_SESSION['senha'] = $row['senha'];
+        $_SESSION['email'] = $row['email'];
 
         header("location:index.php");
         

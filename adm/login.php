@@ -3,20 +3,20 @@
 include("bootstrap_css.php");
 include("../db/dbconnect.php");
 
-if(isset($_POST['nome']) && isset($_POST['senha'])) {
+if(isset($_POST['login']) && isset($_POST['senha'])) {
 
-	$nome=$_POST['nome'];
+	$login=$_POST['login'];
 	$senha=$_POST['senha'];
 
 
-    $sql="SELECT * FROM hospede WHERE nome='$nome' AND senha='$senha' ";
+    $sql="SELECT * FROM user WHERE login='$login' AND senha='$senha' ";
     
 	$result=mysqli_query($conexao , $sql);
 
 	if(mysqli_num_rows($result) == 1) {
         
         session_start();
-        $_SESSION['usuario'] = $nome;
+        $_SESSION['usuario'] = $login;
 		//$_SESSION['senha']=$senha;
 
         header("location:disponiveis.php");

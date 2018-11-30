@@ -6,15 +6,16 @@
     }
     
 ?>
+
 <br>
 <div class="container">
     <div class="jumbotron">
         <h2>Suas estadias</h2> 
         <h5 class="text-primary" >Aqui está seu histórico de hospedagens!</h5><br>
         <?php
-            $nome = $_SESSION['usuario'];
+            $cpf = $_SESSION['cpf'];
 
-            $query = "select * from estadia where nome_H='$nome' order by idE desc;";
+            $query = "select * from estadia where CPF_H='$cpf' order by idE desc;";
 
             $result = mysqli_query($conexao, $query);
 

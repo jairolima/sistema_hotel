@@ -29,6 +29,16 @@ create table suite(
     
 )engine=InnoDB default charset=utf8;
 
+create table user(
+	login varchar(45),
+    senha varchar(8),
+    tipo int(1)
+    
+)engine=InnoDB default charset=utf8;
+
+insert into user(login, senha, tipo) values
+	('admin', 'admin', 1);
+
 insert into suite(numero, tipo, ocupado) values
 	('001', 'Individual', 'N'),
     ('002', 'Individual', 'N'),
