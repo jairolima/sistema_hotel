@@ -134,7 +134,7 @@ i.glyphicon {
     <!-- Copyright -->
     <div class="footer-copyright text-center text-black-50 py-3">© 2018 Copyright:
       <a class="dark-grey-text" href="index.php"> hotelmarvermelho.com.br</a> |
-      <a class="dark-grey-text" href="adm/login_pg.php">Adm</a>
+      <a class="dark-grey-text" href="adm/login_pg.php">HMV</a>
     </div>
     <!-- Copyright -->
 </div>
